@@ -8,7 +8,7 @@ Chrome拡張機能を作成しようとも思いましたが2023年1月にmanife
 
 ## 動作環境
 Pythonにeel, requests, requests_oauthlibをPyPIから導入してapp.pyを実行すると動くと思います．Google Chromeで動作確認済み  
-（後日requirements.txtも公開する予定）
+（後日requirements.txtもちゃんと書きたい）
 
 ## 操作
 操作は翻訳したい英単語，英文をクリップボードにコピーするだけです．  
