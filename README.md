@@ -7,7 +7,7 @@ Chrome拡張機能を作成しようとも思いましたが2023年1月にmanife
 ただ，GUI作成が面倒なのでPythonからchromiumが触れるeelを利用しました．
 
 ## 動作環境
-Pythonにeel, requests, requests_oauthlibをPyPIから導入してapp.pyを実行すると動くと思います．Google Chromeで動作確認済み  
+Windowsのみ．Pythonにeel, requests, requests_oauthlibをPyPIから導入してapp.pyを実行すると動くと思います．Google Chromeで動作確認済み  
 （後日requirements.txtもちゃんと書きたい）
 
 ## 操作
