@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>translate</title>
+
+    <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <script>
+        eel.expose(transport_json);
+        function transport_json(json) {
+            document.getElementById("word").textContent = json["key"];
+            var code = '';
+            for (var i in json["words"]){
+                code += `<p>${json["words"][i]}</p>`;
+            }
+            document.getElementById("jas").innerHTML = code;
+            document.getElementById("translate").textContent = json["translate"];
+        }
+    </script>
+</head>
+
+<body>
+    <div id="word"></div>
+    <div id="jas"></div>
+    <div id="translate"></div>
+</body>
+
+</html>
