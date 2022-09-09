@@ -16,6 +16,19 @@
             }
             document.getElementById("jas").innerHTML = code;
             document.getElementById("translate").textContent = json["translate"];
+            
+            function getBase64(file) {
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function () {
+                    console.log(reader.result);
+                };
+                reader.onerror = function (error) {
+                    console.log('Error: ', error);
+                };
+            }
+            getBase64('tmp.mp3');
+            //audio.setAttribute('src', 'tmp.mp3');
         }
     </script>
 </head>
@@ -23,6 +36,9 @@
 <body>
     <div id="word"></div>
     <div id="jas"></div>
+    <audio id="audio" controls>
+        <source src="tmp.mp3">
+    </audio>
     <div id="translate"></div>
 </body>
 
